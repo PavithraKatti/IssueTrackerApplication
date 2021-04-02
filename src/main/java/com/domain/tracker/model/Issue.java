@@ -20,10 +20,6 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 public class Issue extends BaseEntity {
 
-//    @JoinColumn
-//    @ManyToOne(targetEntity = User.class)
-//    private User user;
-
     @Column(nullable = false)
     private String title;
 
@@ -47,12 +43,4 @@ public class Issue extends BaseEntity {
 
     @Column
     private BigInteger message;
-
-//    @JoinColumn(name = "id")
-//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = IssueMessage.class)
-//    private List<IssueMessage> messages;
-
-//    public enum Status {
-//        ADDED, READY, ONGOING
-//    }
 }
